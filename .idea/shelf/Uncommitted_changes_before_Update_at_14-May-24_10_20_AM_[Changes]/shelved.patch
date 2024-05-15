@@ -1,0 +1,1031 @@
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">PageTrade</string>\r\n\r\n    <string name=\"navigation_drawer_open\">Open navigation drawer</string>\r\n    <string name=\"navigation_drawer_close\">Close navigation drawer</string>\r\n\r\n    <string name=\"seller_image_description\">seller_image_placeholder</string>\r\n\r\n    <string name=\"heading1\">Buy &amp; Sell Books</string>\r\n    <string name=\"heading2\">Also available PDF</string>\r\n    <string name=\"heading3\">Easy Payment</string>\r\n\r\n    <string name=\"desc1\">Easily buy &amp; sell different types of books</string>\r\n    <string name=\"desc2\">Can get PDF version within a minimal cost</string>\r\n    <string name=\"desc3\">Have the option to pay online or when the item is delivered to home</string>\r\n    <!-- Strings related to login -->\r\n    <string name=\"prompt_email\">Email</string>\r\n    <string name=\"prompt_password\">Password</string>\r\n    <string name=\"action_sign_in\">Sign in or register</string>\r\n    <string name=\"action_sign_in_short\">Sign in</string>\r\n    <string name=\"welcome\">\"Welcome!\"</string>\r\n    <string name=\"invalid_username\">Not a valid username</string>\r\n    <string name=\"invalid_password\">Password must be >5 characters</string>\r\n    <string name=\"login_failed\">\"Login failed\"</string>\r\n\r\n    <string name=\"link\">\r\n        <a href=\"https://github.com/ahona-omi/PageTrade\"> PageTradeGit</a>\r\n    </string>\r\n\r\n    <string name=\"yt\">\r\n        <a href=\"https://youtu.be/qJ5ssmyujgw\"> PageTradeYoutube</a>\r\n    </string>\r\n\r\n    <string name=\"apk\">\r\n        <a href=\"https://drive.google.com/drive/folders/14WdhQij2GjyaI75wQFYp7TirjDXmZsOf?usp=sharing\"> PageTradeApk</a>\r\n    </string>\r\n\r\n    <string-array name=\"usertype\">\r\n        <item>Buyer</item>\r\n        <item>Seller</item>\r\n    </string-array>\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/app/src/main/res/values/strings.xml	(date 1715658823207)
+@@ -1,5 +1,5 @@
+ <resources>
+-    <string name="app_name">PageTrade</string>
++    <string name="app_name">BoiNiketan</string>
+ 
+     <string name="navigation_drawer_open">Open navigation drawer</string>
+     <string name="navigation_drawer_close">Close navigation drawer</string>
+@@ -24,15 +24,15 @@
+     <string name="login_failed">"Login failed"</string>
+ 
+     <string name="link">
+-        <a href="https://github.com/ahona-omi/PageTrade"> PageTradeGit</a>
++        <a href="https://github.com"> BoiNiketanGit</a>
+     </string>
+ 
+     <string name="yt">
+-        <a href="https://youtu.be/qJ5ssmyujgw"> PageTradeYoutube</a>
++        <a href="https://youtube.com"> BoiNiketanYoutube</a>
+     </string>
+ 
+     <string name="apk">
+-        <a href="https://drive.google.com/drive/folders/14WdhQij2GjyaI75wQFYp7TirjDXmZsOf?usp=sharing"> PageTradeApk</a>
++        <a href="https://drive.google.com/drive/folders/14WdhQij2GjyaI75wQFYp7TirjDXmZsOf?usp=sharing"> BoiNiketanApk</a>
+     </string>
+ 
+     <string-array name="usertype">
+Index: app/src/main/res/layout/activity_rateus.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/drawer_layout\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/up\"\r\n    tools:context=\".RateusActivity\"\r\n    android:fitsSystemWindows=\"true\"\r\n    tools:layout_editor_absoluteX=\"-314dp\"\r\n    tools:layout_editor_absoluteY=\"-6dp\"\r\n    tools:openDrawer=\"start\">\r\n\r\n    <com.google.android.material.navigation.NavigationView\r\n        android:id=\"@+id/nav_view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\"\r\n        app:headerLayout=\"@layout/header\"\r\n        app:menu=\"@menu/all_menu\" />\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <androidx.appcompat.widget.Toolbar\r\n            android:id=\"@+id/toolbar\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"56dp\"\r\n            android:background=\"@color/lavender1\"\r\n            app:titleTextColor=\"@color/black\"\r\n            android:elevation=\"4dp\"\r\n            android:theme=\"@style/ThemeOverlay.AppCompat.Dark.ActionBar\"\r\n            app:popupTheme=\"@style/ThemeOverlay.AppCompat.Light\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/subTitleTv\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:textColor=\"@color/black\"\r\n            android:gravity=\"center\"\r\n            android:background=\"@color/lavender5\"/>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\"\r\n            android:paddingTop=\"20dp\">\r\n\r\n            <TextView\r\n                android:id=\"@+id/dev\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Developed by\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"5dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"26dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/name\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Ahona Rahman\"\r\n                android:drawableStart=\"@drawable/acc\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:paddingStart=\"60dp\"\r\n                android:padding=\"5dp\"\r\n                android:textStyle=\"bold\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"24dp\" />\r\n            <TextView\r\n                android:id=\"@+id/name2\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Waki As Sami\"\r\n                android:drawableStart=\"@drawable/acc\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:paddingStart=\"60dp\"\r\n                android:padding=\"0dp\"\r\n                android:textStyle=\"bold\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"24dp\" />\r\n            <TextView\r\n                android:id=\"@+id/name3\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Saadman Moyeed\"\r\n                android:drawableStart=\"@drawable/acc\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:paddingStart=\"60dp\"\r\n                android:padding=\"0dp\"\r\n                android:textStyle=\"bold\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"24dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/edu\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:textStyle=\"bold\"\r\n                android:drawableStart=\"@drawable/educ\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"5dp\"\r\n                android:paddingStart=\"50dp\"\r\n                android:text=\"CSE, University of Dhaka\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/sug\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"10dp\"\r\n                android:text=\"For any suggestions or queries, contact us:\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"18dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/email\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"ahona.omi0818@gmail.com\"\r\n                android:textStyle=\"italic\"\r\n                android:drawableStart=\"@drawable/emaill\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"0dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/email2\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"sayedmdwaki-2020115621@cs.du.ac.bd\"\r\n                android:textStyle=\"italic\"\r\n                android:drawableStart=\"@drawable/emaill\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"0dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/email3\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"saadman1032@gmail.com\"\r\n                android:textStyle=\"italic\"\r\n                android:drawableStart=\"@drawable/emaill\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"0dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <com.airbnb.lottie.LottieAnimationView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"10dp\"\r\n                app:lottie_autoPlay=\"true\"\r\n                android:id=\"@+id/lottie\"\r\n                app:lottie_rawRes=\"@raw/coom\"/>\r\n\r\n        </LinearLayout>\r\n\r\n    </LinearLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_rateus.xml b/app/src/main/res/layout/activity_rateus.xml
+--- a/app/src/main/res/layout/activity_rateus.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/app/src/main/res/layout/activity_rateus.xml	(date 1715657344777)
+@@ -60,30 +60,6 @@
+                 android:textColor="@color/black"
+                 android:textSize="26dp" />
+ 
+-            <TextView
+-                android:id="@+id/name"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="Ahona Rahman"
+-                android:drawableStart="@drawable/acc"
+-                android:drawablePadding="10dp"
+-                android:paddingStart="60dp"
+-                android:padding="5dp"
+-                android:textStyle="bold"
+-                android:textColor="@color/black"
+-                android:textSize="24dp" />
+-            <TextView
+-                android:id="@+id/name2"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="Waki As Sami"
+-                android:drawableStart="@drawable/acc"
+-                android:drawablePadding="10dp"
+-                android:paddingStart="60dp"
+-                android:padding="0dp"
+-                android:textStyle="bold"
+-                android:textColor="@color/black"
+-                android:textSize="24dp" />
+             <TextView
+                 android:id="@+id/name3"
+                 android:layout_width="wrap_content"
+@@ -121,31 +97,31 @@
+                 android:textColor="@color/black"
+                 android:textSize="18dp" />
+ 
+-            <TextView
+-                android:id="@+id/email"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="ahona.omi0818@gmail.com"
+-                android:textStyle="italic"
+-                android:drawableStart="@drawable/emaill"
+-                android:drawablePadding="10dp"
+-                android:padding="0dp"
+-                android:paddingStart="30dp"
+-                android:textColor="@color/black"
+-                android:textSize="22dp" />
++<!--            <TextView-->
++<!--                android:id="@+id/email"-->
++<!--                android:layout_width="wrap_content"-->
++<!--                android:layout_height="wrap_content"-->
++<!--                android:text=""-->
++<!--                android:textStyle="italic"-->
++<!--                android:drawableStart="@drawable/emaill"-->
++<!--                android:drawablePadding="10dp"-->
++<!--                android:padding="0dp"-->
++<!--                android:paddingStart="30dp"-->
++<!--                android:textColor="@color/black"-->
++<!--                android:textSize="22dp" />-->
+ 
+-            <TextView
+-                android:id="@+id/email2"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="sayedmdwaki-2020115621@cs.du.ac.bd"
+-                android:textStyle="italic"
+-                android:drawableStart="@drawable/emaill"
+-                android:drawablePadding="10dp"
+-                android:padding="0dp"
+-                android:paddingStart="30dp"
+-                android:textColor="@color/black"
+-                android:textSize="22dp" />
++<!--            <TextView-->
++<!--                android:id="@+id/email2"-->
++<!--                android:layout_width="wrap_content"-->
++<!--                android:layout_height="wrap_content"-->
++<!--                android:text=""-->
++<!--                android:textStyle="italic"-->
++<!--                android:drawableStart="@drawable/emaill"-->
++<!--                android:drawablePadding="10dp"-->
++<!--                android:padding="0dp"-->
++<!--                android:paddingStart="30dp"-->
++<!--                android:textColor="@color/black"-->
++<!--                android:textSize="22dp" />-->
+ 
+             <TextView
+                 android:id="@+id/email3"
+Index: app/src/main/res/layout/activity_rateus_buyer.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/drawer_layout\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/up\"\r\n    tools:context=\".RateusBuyerActivity\"\r\n    android:fitsSystemWindows=\"true\"\r\n    tools:layout_editor_absoluteX=\"-314dp\"\r\n    tools:layout_editor_absoluteY=\"-6dp\"\r\n    tools:openDrawer=\"start\">\r\n\r\n    <com.google.android.material.navigation.NavigationView\r\n        android:id=\"@+id/nav_view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\"\r\n        app:headerLayout=\"@layout/header\"\r\n        app:menu=\"@menu/all_menu_buyer\" />\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <androidx.appcompat.widget.Toolbar\r\n            android:id=\"@+id/toolbar\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"56dp\"\r\n            android:background=\"@color/lavender1\"\r\n            app:titleTextColor=\"@color/black\"\r\n            android:elevation=\"4dp\"\r\n            android:theme=\"@style/ThemeOverlay.AppCompat.Dark.ActionBar\"\r\n            app:popupTheme=\"@style/ThemeOverlay.AppCompat.Light\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/subTitleTv\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:textColor=\"@color/black\"\r\n            android:gravity=\"center\"\r\n            android:background=\"@color/lavender5\"/>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\"\r\n            android:paddingTop=\"20dp\">\r\n\r\n            <TextView\r\n                android:id=\"@+id/dev\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Developed by\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"5dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"26dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/name\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Ahona Rahman\"\r\n                android:drawableStart=\"@drawable/acc\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:paddingStart=\"60dp\"\r\n                android:padding=\"5dp\"\r\n                android:textStyle=\"bold\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"24dp\" />\r\n            <TextView\r\n                android:id=\"@+id/name2\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Waki As Sami\"\r\n                android:drawableStart=\"@drawable/acc\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:paddingStart=\"60dp\"\r\n                android:padding=\"0dp\"\r\n                android:textStyle=\"bold\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"24dp\" />\r\n            <TextView\r\n                android:id=\"@+id/name3\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Saadman Moyeed\"\r\n                android:drawableStart=\"@drawable/acc\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:paddingStart=\"60dp\"\r\n                android:padding=\"0dp\"\r\n                android:textStyle=\"bold\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"24dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/edu\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:textStyle=\"bold\"\r\n                android:drawableStart=\"@drawable/educ\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"5dp\"\r\n                android:paddingStart=\"50dp\"\r\n                android:text=\"CSE, University of Dhaka\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/sug\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"10dp\"\r\n                android:text=\"For any suggestions or queries, contact us:\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"18dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/email\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"ahona.omi0818@gmail.com\"\r\n                android:textStyle=\"italic\"\r\n                android:drawableStart=\"@drawable/emaill\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"0dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/email2\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"sayedmdwaki-2020115621@cs.du.ac.bd\"\r\n                android:textStyle=\"italic\"\r\n                android:drawableStart=\"@drawable/emaill\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"0dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <TextView\r\n                android:id=\"@+id/email3\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"saadman1032@gmail.com\"\r\n                android:textStyle=\"italic\"\r\n                android:drawableStart=\"@drawable/emaill\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"0dp\"\r\n                android:paddingStart=\"30dp\"\r\n                android:textColor=\"@color/black\"\r\n                android:textSize=\"22dp\" />\r\n\r\n            <com.airbnb.lottie.LottieAnimationView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"10dp\"\r\n                app:lottie_autoPlay=\"true\"\r\n                android:id=\"@+id/lottie\"\r\n                app:lottie_rawRes=\"@raw/coomb\"/>\r\n\r\n        </LinearLayout>\r\n\r\n    </LinearLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_rateus_buyer.xml b/app/src/main/res/layout/activity_rateus_buyer.xml
+--- a/app/src/main/res/layout/activity_rateus_buyer.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/app/src/main/res/layout/activity_rateus_buyer.xml	(date 1715657344790)
+@@ -59,31 +59,6 @@
+                 android:paddingStart="30dp"
+                 android:textColor="@color/black"
+                 android:textSize="26dp" />
+-
+-            <TextView
+-                android:id="@+id/name"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="Ahona Rahman"
+-                android:drawableStart="@drawable/acc"
+-                android:drawablePadding="10dp"
+-                android:paddingStart="60dp"
+-                android:padding="5dp"
+-                android:textStyle="bold"
+-                android:textColor="@color/black"
+-                android:textSize="24dp" />
+-            <TextView
+-                android:id="@+id/name2"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="Waki As Sami"
+-                android:drawableStart="@drawable/acc"
+-                android:drawablePadding="10dp"
+-                android:paddingStart="60dp"
+-                android:padding="0dp"
+-                android:textStyle="bold"
+-                android:textColor="@color/black"
+-                android:textSize="24dp" />
+             <TextView
+                 android:id="@+id/name3"
+                 android:layout_width="wrap_content"
+@@ -121,31 +96,31 @@
+                 android:textColor="@color/black"
+                 android:textSize="18dp" />
+ 
+-            <TextView
+-                android:id="@+id/email"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="ahona.omi0818@gmail.com"
+-                android:textStyle="italic"
+-                android:drawableStart="@drawable/emaill"
+-                android:drawablePadding="10dp"
+-                android:padding="0dp"
+-                android:paddingStart="30dp"
+-                android:textColor="@color/black"
+-                android:textSize="22dp" />
++<!--            <TextView-->
++<!--                android:id="@+id/email"-->
++<!--                android:layout_width="wrap_content"-->
++<!--                android:layout_height="wrap_content"-->
++<!--                android:text=""-->
++<!--                android:textStyle="italic"-->
++<!--                android:drawableStart="@drawable/emaill"-->
++<!--                android:drawablePadding="10dp"-->
++<!--                android:padding="0dp"-->
++<!--                android:paddingStart="30dp"-->
++<!--                android:textColor="@color/black"-->
++<!--                android:textSize="22dp" />-->
+ 
+-            <TextView
+-                android:id="@+id/email2"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:text="sayedmdwaki-2020115621@cs.du.ac.bd"
+-                android:textStyle="italic"
+-                android:drawableStart="@drawable/emaill"
+-                android:drawablePadding="10dp"
+-                android:padding="0dp"
+-                android:paddingStart="30dp"
+-                android:textColor="@color/black"
+-                android:textSize="22dp" />
++<!--            <TextView-->
++<!--                android:id="@+id/email2"-->
++<!--                android:layout_width="wrap_content"-->
++<!--                android:layout_height="wrap_content"-->
++<!--                android:text=""-->
++<!--                android:textStyle="italic"-->
++<!--                android:drawableStart="@drawable/emaill"-->
++<!--                android:drawablePadding="10dp"-->
++<!--                android:padding="0dp"-->
++<!--                android:paddingStart="30dp"-->
++<!--                android:textColor="@color/black"-->
++<!--                android:textSize="22dp" />-->
+ 
+             <TextView
+                 android:id="@+id/email3"
+Index: app/src/main/java/com/example/pagetrade/RateusBuyerActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.pagetrade;\r\n\r\nimport android.annotation.SuppressLint;\r\nimport android.content.Intent;\r\nimport android.net.Uri;\r\nimport android.os.Bundle;\r\nimport android.text.Html;\r\nimport android.view.LayoutInflater;\r\nimport android.view.MenuItem;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.LinearLayout;\r\nimport android.widget.TextView;\r\nimport android.widget.Toast;\r\n\r\nimport com.airbnb.lottie.LottieAnimationView;\r\nimport com.example.pagetrade.R;\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.ActionBarDrawerToggle;\r\nimport androidx.appcompat.app.AlertDialog;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.appcompat.widget.Toolbar;\r\nimport androidx.core.view.GravityCompat;\r\nimport androidx.drawerlayout.widget.DrawerLayout;\r\nimport androidx.fragment.app.Fragment;\r\nimport androidx.fragment.app.FragmentManager;\r\nimport androidx.fragment.app.FragmentTransaction;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\nimport androidx.viewpager.widget.ViewPager;\r\n\r\nimport com.google.android.material.floatingactionbutton.FloatingActionButton;\r\nimport com.google.android.material.navigation.NavigationView;\r\nimport com.google.firebase.auth.FirebaseAuth;\r\nimport com.google.firebase.auth.FirebaseUser;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class RateusBuyerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{\r\n    DrawerLayout drawerLayout;\r\n    NavigationView navigationView;\r\n    Toolbar toolbar;\r\n    TextView ev,mail, mail2,mail3;\r\n    LottieAnimationView lottie;\r\n    @SuppressLint(\"MissingInflatedId\")\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_rateus_buyer);\r\n\r\n        drawerLayout=findViewById(R.id.drawer_layout);\r\n        navigationView=findViewById(R.id.nav_view);\r\n        toolbar=findViewById(R.id.toolbar);\r\n\r\n        FirebaseAuth firebaseAuth= FirebaseAuth.getInstance();\r\n        FirebaseUser firebaseUser= firebaseAuth.getCurrentUser();\r\n        String email= firebaseUser.getEmail();\r\n        ev= findViewById(R.id.subTitleTv);\r\n        mail= findViewById(R.id.email);\r\n        mail2= findViewById(R.id.email2);\r\n        mail3= findViewById(R.id.email3);\r\n        ev.setText(email);\r\n        lottie= findViewById(R.id.lottie);\r\n\r\n        setSupportActionBar(toolbar);\r\n\r\n        navigationView.bringToFront();\r\n        ActionBarDrawerToggle toggle= new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);\r\n        drawerLayout.addDrawerListener(toggle);\r\n        toggle.syncState();\r\n\r\n        navigationView.setNavigationItemSelectedListener(this);\r\n        getSupportActionBar().setDisplayHomeAsUpEnabled(true);\r\n\r\n        mail.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view) {\r\n                String sellerEmail= mail.getText().toString();\r\n                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);\r\n                emailIntent.setData(Uri.parse(\"mailto:\" + sellerEmail)); // Set the email address\r\n                emailIntent.putExtra(Intent.EXTRA_SUBJECT, \"Regarding the book\"); // Set the email subject\r\n                emailIntent.putExtra(Intent.EXTRA_TEXT, \"Hello, I am interested in your book.\"); // Set the email body\r\n\r\n                try {\r\n                    startActivity(Intent.createChooser(emailIntent, \"Send Email\"));\r\n                } catch (android.content.ActivityNotFoundException ex) {\r\n                    // Handle the case where no email client is installed on the device\r\n                    Toast.makeText(RateusBuyerActivity.this, \"No email client installed.\", Toast.LENGTH_SHORT).show();\r\n                }\r\n            }\r\n        });\r\n        mail2.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view) {\r\n                String sellerEmail= mail.getText().toString();\r\n                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);\r\n                emailIntent.setData(Uri.parse(\"mailto:\" + sellerEmail)); // Set the email address\r\n                emailIntent.putExtra(Intent.EXTRA_SUBJECT, \"Regarding the book\"); // Set the email subject\r\n                emailIntent.putExtra(Intent.EXTRA_TEXT, \"Hello, I am interested in your book.\"); // Set the email body\r\n\r\n                try {\r\n                    startActivity(Intent.createChooser(emailIntent, \"Send Email\"));\r\n                } catch (android.content.ActivityNotFoundException ex) {\r\n                    // Handle the case where no email client is installed on the device\r\n                    Toast.makeText(RateusBuyerActivity.this, \"No email client installed.\", Toast.LENGTH_SHORT).show();\r\n                }\r\n            }\r\n        });\r\n        mail3.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view) {\r\n                String sellerEmail= mail.getText().toString();\r\n                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);\r\n                emailIntent.setData(Uri.parse(\"mailto:\" + sellerEmail)); // Set the email address\r\n                emailIntent.putExtra(Intent.EXTRA_SUBJECT, \"Regarding the book\"); // Set the email subject\r\n                emailIntent.putExtra(Intent.EXTRA_TEXT, \"Hello, I am interested in your book.\"); // Set the email body\r\n\r\n                try {\r\n                    startActivity(Intent.createChooser(emailIntent, \"Send Email\"));\r\n                } catch (android.content.ActivityNotFoundException ex) {\r\n                    // Handle the case where no email client is installed on the device\r\n                    Toast.makeText(RateusBuyerActivity.this, \"No email client installed.\", Toast.LENGTH_SHORT).show();\r\n                }\r\n            }\r\n        });\r\n    }\r\n\r\n    @Override\r\n    public void onBackPressed() {\r\n        if(drawerLayout.isDrawerOpen(GravityCompat.START)){\r\n            drawerLayout.closeDrawer(GravityCompat.START);\r\n        } else {\r\n            super.onBackPressed();\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public boolean onNavigationItemSelected(@NonNull MenuItem item) {\r\n        int id = item.getItemId();\r\n\r\n        if(id ==R.id.nav_home){\r\n            Intent cartIntent = new Intent(RateusBuyerActivity.this, MainBuyerActivity.class);\r\n            startActivity(cartIntent);\r\n        } else if(id==R.id.nav_vieworder){\r\n            Intent viewOrderIntent = new Intent(RateusBuyerActivity.this, VieworderBuyerActivity.class);\r\n            startActivity(viewOrderIntent);\r\n        } else if(id==R.id.nav_profile){\r\n            Intent viewOrderIntent = new Intent(RateusBuyerActivity.this, BuyerProfileActivity.class);\r\n            startActivity(viewOrderIntent);\r\n        } else if(id==R.id.nav_logout){\r\n            FirebaseAuth.getInstance().signOut();\r\n            Intent viewOrderIntent = new Intent(RateusBuyerActivity.this, LoginActivity.class);\r\n            startActivity(viewOrderIntent);\r\n        } else if(id==R.id.nav_share){\r\n            Intent viewOrderIntent = new Intent(RateusBuyerActivity.this, ShareBuyerActivity.class);\r\n            startActivity(viewOrderIntent);\r\n        }\r\n        drawerLayout.closeDrawer(GravityCompat.START);\r\n        return true;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/pagetrade/RateusBuyerActivity.java b/app/src/main/java/com/example/pagetrade/RateusBuyerActivity.java
+--- a/app/src/main/java/com/example/pagetrade/RateusBuyerActivity.java	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/app/src/main/java/com/example/pagetrade/RateusBuyerActivity.java	(date 1715657344783)
+@@ -42,7 +42,7 @@
+     DrawerLayout drawerLayout;
+     NavigationView navigationView;
+     Toolbar toolbar;
+-    TextView ev,mail, mail2,mail3;
++    TextView ev,mail3;
+     LottieAnimationView lottie;
+     @SuppressLint("MissingInflatedId")
+     @Override
+@@ -58,8 +58,8 @@
+         FirebaseUser firebaseUser= firebaseAuth.getCurrentUser();
+         String email= firebaseUser.getEmail();
+         ev= findViewById(R.id.subTitleTv);
+-        mail= findViewById(R.id.email);
+-        mail2= findViewById(R.id.email2);
++//        mail= findViewById(R.id.email);
++//        mail2= findViewById(R.id.email2);
+         mail3= findViewById(R.id.email3);
+         ev.setText(email);
+         lottie= findViewById(R.id.lottie);
+@@ -74,44 +74,44 @@
+         navigationView.setNavigationItemSelectedListener(this);
+         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+ 
+-        mail.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View view) {
+-                String sellerEmail= mail.getText().toString();
+-                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+-                emailIntent.setData(Uri.parse("mailto:" + sellerEmail)); // Set the email address
+-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Regarding the book"); // Set the email subject
+-                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hello, I am interested in your book."); // Set the email body
+-
+-                try {
+-                    startActivity(Intent.createChooser(emailIntent, "Send Email"));
+-                } catch (android.content.ActivityNotFoundException ex) {
+-                    // Handle the case where no email client is installed on the device
+-                    Toast.makeText(RateusBuyerActivity.this, "No email client installed.", Toast.LENGTH_SHORT).show();
+-                }
+-            }
+-        });
+-        mail2.setOnClickListener(new View.OnClickListener() {
+-            @Override
+-            public void onClick(View view) {
+-                String sellerEmail= mail.getText().toString();
+-                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+-                emailIntent.setData(Uri.parse("mailto:" + sellerEmail)); // Set the email address
+-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Regarding the book"); // Set the email subject
+-                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hello, I am interested in your book."); // Set the email body
+-
+-                try {
+-                    startActivity(Intent.createChooser(emailIntent, "Send Email"));
+-                } catch (android.content.ActivityNotFoundException ex) {
+-                    // Handle the case where no email client is installed on the device
+-                    Toast.makeText(RateusBuyerActivity.this, "No email client installed.", Toast.LENGTH_SHORT).show();
+-                }
+-            }
+-        });
++//        mail.setOnClickListener(new View.OnClickListener() {
++//            @Override
++//            public void onClick(View view) {
++//                String sellerEmail= mail.getText().toString();
++//                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
++//                emailIntent.setData(Uri.parse("mailto:" + sellerEmail)); // Set the email address
++//                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Regarding the book"); // Set the email subject
++//                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hello, I am interested in your book."); // Set the email body
++//
++//                try {
++//                    startActivity(Intent.createChooser(emailIntent, "Send Email"));
++//                } catch (android.content.ActivityNotFoundException ex) {
++//                    // Handle the case where no email client is installed on the device
++//                    Toast.makeText(RateusBuyerActivity.this, "No email client installed.", Toast.LENGTH_SHORT).show();
++//                }
++//            }
++//        });
++//        mail2.setOnClickListener(new View.OnClickListener() {
++//            @Override
++//            public void onClick(View view) {
++//                String sellerEmail= mail.getText().toString();
++//                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
++//                emailIntent.setData(Uri.parse("mailto:" + sellerEmail)); // Set the email address
++//                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Regarding the book"); // Set the email subject
++//                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hello, I am interested in your book."); // Set the email body
++//
++//                try {
++//                    startActivity(Intent.createChooser(emailIntent, "Send Email"));
++//                } catch (android.content.ActivityNotFoundException ex) {
++//                    // Handle the case where no email client is installed on the device
++//                    Toast.makeText(RateusBuyerActivity.this, "No email client installed.", Toast.LENGTH_SHORT).show();
++//                }
++//            }
++//        });
+         mail3.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+-                String sellerEmail= mail.getText().toString();
++                String sellerEmail= mail3.getText().toString();
+                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                 emailIntent.setData(Uri.parse("mailto:" + sellerEmail)); // Set the email address
+                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Regarding the book"); // Set the email subject
+Index: .idea/dbnavigator.xml
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+deleted file mode 100644
+--- a/.idea/dbnavigator.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ /dev/null	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
+@@ -1,405 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="DBNavigator.Project.DatabaseFileManager">
+-    <open-files />
+-  </component>
+-  <component name="DBNavigator.Project.Settings">
+-    <connections />
+-    <browser-settings>
+-      <general>
+-        <display-mode value="TABBED" />
+-        <navigation-history-size value="100" />
+-        <show-object-details value="false" />
+-      </general>
+-      <filters>
+-        <object-type-filter>
+-          <object-type name="SCHEMA" enabled="true" />
+-          <object-type name="USER" enabled="true" />
+-          <object-type name="ROLE" enabled="true" />
+-          <object-type name="PRIVILEGE" enabled="true" />
+-          <object-type name="CHARSET" enabled="true" />
+-          <object-type name="TABLE" enabled="true" />
+-          <object-type name="VIEW" enabled="true" />
+-          <object-type name="MATERIALIZED_VIEW" enabled="true" />
+-          <object-type name="NESTED_TABLE" enabled="true" />
+-          <object-type name="COLUMN" enabled="true" />
+-          <object-type name="INDEX" enabled="true" />
+-          <object-type name="CONSTRAINT" enabled="true" />
+-          <object-type name="DATASET_TRIGGER" enabled="true" />
+-          <object-type name="DATABASE_TRIGGER" enabled="true" />
+-          <object-type name="SYNONYM" enabled="true" />
+-          <object-type name="SEQUENCE" enabled="true" />
+-          <object-type name="PROCEDURE" enabled="true" />
+-          <object-type name="FUNCTION" enabled="true" />
+-          <object-type name="PACKAGE" enabled="true" />
+-          <object-type name="TYPE" enabled="true" />
+-          <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+-          <object-type name="ARGUMENT" enabled="true" />
+-          <object-type name="DIMENSION" enabled="true" />
+-          <object-type name="CLUSTER" enabled="true" />
+-          <object-type name="DBLINK" enabled="true" />
+-        </object-type-filter>
+-      </filters>
+-      <sorting>
+-        <object-type name="COLUMN" sorting-type="NAME" />
+-        <object-type name="FUNCTION" sorting-type="NAME" />
+-        <object-type name="PROCEDURE" sorting-type="NAME" />
+-        <object-type name="ARGUMENT" sorting-type="POSITION" />
+-        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
+-      </sorting>
+-      <default-editors>
+-        <object-type name="VIEW" editor-type="SELECTION" />
+-        <object-type name="PACKAGE" editor-type="SELECTION" />
+-        <object-type name="TYPE" editor-type="SELECTION" />
+-      </default-editors>
+-    </browser-settings>
+-    <navigation-settings>
+-      <lookup-filters>
+-        <lookup-objects>
+-          <object-type name="SCHEMA" enabled="true" />
+-          <object-type name="USER" enabled="false" />
+-          <object-type name="ROLE" enabled="false" />
+-          <object-type name="PRIVILEGE" enabled="false" />
+-          <object-type name="CHARSET" enabled="false" />
+-          <object-type name="TABLE" enabled="true" />
+-          <object-type name="VIEW" enabled="true" />
+-          <object-type name="MATERIALIZED VIEW" enabled="true" />
+-          <object-type name="INDEX" enabled="true" />
+-          <object-type name="CONSTRAINT" enabled="true" />
+-          <object-type name="DATASET TRIGGER" enabled="true" />
+-          <object-type name="DATABASE TRIGGER" enabled="true" />
+-          <object-type name="SYNONYM" enabled="false" />
+-          <object-type name="SEQUENCE" enabled="true" />
+-          <object-type name="PROCEDURE" enabled="true" />
+-          <object-type name="FUNCTION" enabled="true" />
+-          <object-type name="PACKAGE" enabled="true" />
+-          <object-type name="TYPE" enabled="true" />
+-          <object-type name="DIMENSION" enabled="false" />
+-          <object-type name="CLUSTER" enabled="false" />
+-          <object-type name="DBLINK" enabled="true" />
+-        </lookup-objects>
+-        <force-database-load value="false" />
+-        <prompt-connection-selection value="true" />
+-        <prompt-schema-selection value="true" />
+-      </lookup-filters>
+-    </navigation-settings>
+-    <dataset-grid-settings>
+-      <general>
+-        <enable-zooming value="true" />
+-        <enable-column-tooltip value="true" />
+-      </general>
+-      <sorting>
+-        <nulls-first value="true" />
+-        <max-sorting-columns value="4" />
+-      </sorting>
+-      <audit-columns>
+-        <column-names value="" />
+-        <visible value="true" />
+-        <editable value="false" />
+-      </audit-columns>
+-    </dataset-grid-settings>
+-    <dataset-editor-settings>
+-      <text-editor-popup>
+-        <active value="false" />
+-        <active-if-empty value="false" />
+-        <data-length-threshold value="100" />
+-        <popup-delay value="1000" />
+-      </text-editor-popup>
+-      <values-actions-popup>
+-        <show-popup-button value="true" />
+-        <element-count-threshold value="1000" />
+-        <data-length-threshold value="250" />
+-      </values-actions-popup>
+-      <general>
+-        <fetch-block-size value="100" />
+-        <fetch-timeout value="30" />
+-        <trim-whitespaces value="true" />
+-        <convert-empty-strings-to-null value="true" />
+-        <select-content-on-cell-edit value="true" />
+-        <large-value-preview-active value="true" />
+-      </general>
+-      <filters>
+-        <prompt-filter-dialog value="true" />
+-        <default-filter-type value="BASIC" />
+-      </filters>
+-      <qualified-text-editor text-length-threshold="300">
+-        <content-types>
+-          <content-type name="Text" enabled="true" />
+-          <content-type name="Properties" enabled="true" />
+-          <content-type name="XML" enabled="true" />
+-          <content-type name="DTD" enabled="true" />
+-          <content-type name="HTML" enabled="true" />
+-          <content-type name="XHTML" enabled="true" />
+-          <content-type name="Java" enabled="true" />
+-          <content-type name="SQL" enabled="true" />
+-          <content-type name="PL/SQL" enabled="true" />
+-          <content-type name="JSON" enabled="true" />
+-          <content-type name="JSON5" enabled="true" />
+-          <content-type name="Groovy" enabled="true" />
+-          <content-type name="AIDL" enabled="true" />
+-          <content-type name="YAML" enabled="true" />
+-          <content-type name="Manifest" enabled="true" />
+-        </content-types>
+-      </qualified-text-editor>
+-      <record-navigation>
+-        <navigation-target value="VIEWER" />
+-      </record-navigation>
+-    </dataset-editor-settings>
+-    <code-editor-settings>
+-      <general>
+-        <show-object-navigation-gutter value="false" />
+-        <show-spec-declaration-navigation-gutter value="true" />
+-        <enable-spellchecking value="true" />
+-        <enable-reference-spellchecking value="false" />
+-      </general>
+-      <confirmations>
+-        <save-changes value="false" />
+-        <revert-changes value="true" />
+-      </confirmations>
+-    </code-editor-settings>
+-    <code-completion-settings>
+-      <filters>
+-        <basic-filter>
+-          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="function" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
+-          <filter-element type="OBJECT" id="schema" selected="true" />
+-          <filter-element type="OBJECT" id="role" selected="true" />
+-          <filter-element type="OBJECT" id="user" selected="true" />
+-          <filter-element type="OBJECT" id="privilege" selected="true" />
+-          <user-schema>
+-            <filter-element type="OBJECT" id="table" selected="true" />
+-            <filter-element type="OBJECT" id="view" selected="true" />
+-            <filter-element type="OBJECT" id="materialized view" selected="true" />
+-            <filter-element type="OBJECT" id="index" selected="true" />
+-            <filter-element type="OBJECT" id="constraint" selected="true" />
+-            <filter-element type="OBJECT" id="trigger" selected="true" />
+-            <filter-element type="OBJECT" id="synonym" selected="false" />
+-            <filter-element type="OBJECT" id="sequence" selected="true" />
+-            <filter-element type="OBJECT" id="procedure" selected="true" />
+-            <filter-element type="OBJECT" id="function" selected="true" />
+-            <filter-element type="OBJECT" id="package" selected="true" />
+-            <filter-element type="OBJECT" id="type" selected="true" />
+-            <filter-element type="OBJECT" id="dimension" selected="true" />
+-            <filter-element type="OBJECT" id="cluster" selected="true" />
+-            <filter-element type="OBJECT" id="dblink" selected="true" />
+-          </user-schema>
+-          <public-schema>
+-            <filter-element type="OBJECT" id="table" selected="false" />
+-            <filter-element type="OBJECT" id="view" selected="false" />
+-            <filter-element type="OBJECT" id="materialized view" selected="false" />
+-            <filter-element type="OBJECT" id="index" selected="false" />
+-            <filter-element type="OBJECT" id="constraint" selected="false" />
+-            <filter-element type="OBJECT" id="trigger" selected="false" />
+-            <filter-element type="OBJECT" id="synonym" selected="false" />
+-            <filter-element type="OBJECT" id="sequence" selected="false" />
+-            <filter-element type="OBJECT" id="procedure" selected="false" />
+-            <filter-element type="OBJECT" id="function" selected="false" />
+-            <filter-element type="OBJECT" id="package" selected="false" />
+-            <filter-element type="OBJECT" id="type" selected="false" />
+-            <filter-element type="OBJECT" id="dimension" selected="false" />
+-            <filter-element type="OBJECT" id="cluster" selected="false" />
+-            <filter-element type="OBJECT" id="dblink" selected="false" />
+-          </public-schema>
+-          <any-schema>
+-            <filter-element type="OBJECT" id="table" selected="true" />
+-            <filter-element type="OBJECT" id="view" selected="true" />
+-            <filter-element type="OBJECT" id="materialized view" selected="true" />
+-            <filter-element type="OBJECT" id="index" selected="true" />
+-            <filter-element type="OBJECT" id="constraint" selected="true" />
+-            <filter-element type="OBJECT" id="trigger" selected="true" />
+-            <filter-element type="OBJECT" id="synonym" selected="true" />
+-            <filter-element type="OBJECT" id="sequence" selected="true" />
+-            <filter-element type="OBJECT" id="procedure" selected="true" />
+-            <filter-element type="OBJECT" id="function" selected="true" />
+-            <filter-element type="OBJECT" id="package" selected="true" />
+-            <filter-element type="OBJECT" id="type" selected="true" />
+-            <filter-element type="OBJECT" id="dimension" selected="true" />
+-            <filter-element type="OBJECT" id="cluster" selected="true" />
+-            <filter-element type="OBJECT" id="dblink" selected="true" />
+-          </any-schema>
+-        </basic-filter>
+-        <extended-filter>
+-          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="function" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
+-          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
+-          <filter-element type="OBJECT" id="schema" selected="true" />
+-          <filter-element type="OBJECT" id="user" selected="true" />
+-          <filter-element type="OBJECT" id="role" selected="true" />
+-          <filter-element type="OBJECT" id="privilege" selected="true" />
+-          <user-schema>
+-            <filter-element type="OBJECT" id="table" selected="true" />
+-            <filter-element type="OBJECT" id="view" selected="true" />
+-            <filter-element type="OBJECT" id="materialized view" selected="true" />
+-            <filter-element type="OBJECT" id="index" selected="true" />
+-            <filter-element type="OBJECT" id="constraint" selected="true" />
+-            <filter-element type="OBJECT" id="trigger" selected="true" />
+-            <filter-element type="OBJECT" id="synonym" selected="true" />
+-            <filter-element type="OBJECT" id="sequence" selected="true" />
+-            <filter-element type="OBJECT" id="procedure" selected="true" />
+-            <filter-element type="OBJECT" id="function" selected="true" />
+-            <filter-element type="OBJECT" id="package" selected="true" />
+-            <filter-element type="OBJECT" id="type" selected="true" />
+-            <filter-element type="OBJECT" id="dimension" selected="true" />
+-            <filter-element type="OBJECT" id="cluster" selected="true" />
+-            <filter-element type="OBJECT" id="dblink" selected="true" />
+-          </user-schema>
+-          <public-schema>
+-            <filter-element type="OBJECT" id="table" selected="true" />
+-            <filter-element type="OBJECT" id="view" selected="true" />
+-            <filter-element type="OBJECT" id="materialized view" selected="true" />
+-            <filter-element type="OBJECT" id="index" selected="true" />
+-            <filter-element type="OBJECT" id="constraint" selected="true" />
+-            <filter-element type="OBJECT" id="trigger" selected="true" />
+-            <filter-element type="OBJECT" id="synonym" selected="true" />
+-            <filter-element type="OBJECT" id="sequence" selected="true" />
+-            <filter-element type="OBJECT" id="procedure" selected="true" />
+-            <filter-element type="OBJECT" id="function" selected="true" />
+-            <filter-element type="OBJECT" id="package" selected="true" />
+-            <filter-element type="OBJECT" id="type" selected="true" />
+-            <filter-element type="OBJECT" id="dimension" selected="true" />
+-            <filter-element type="OBJECT" id="cluster" selected="true" />
+-            <filter-element type="OBJECT" id="dblink" selected="true" />
+-          </public-schema>
+-          <any-schema>
+-            <filter-element type="OBJECT" id="table" selected="true" />
+-            <filter-element type="OBJECT" id="view" selected="true" />
+-            <filter-element type="OBJECT" id="materialized view" selected="true" />
+-            <filter-element type="OBJECT" id="index" selected="true" />
+-            <filter-element type="OBJECT" id="constraint" selected="true" />
+-            <filter-element type="OBJECT" id="trigger" selected="true" />
+-            <filter-element type="OBJECT" id="synonym" selected="true" />
+-            <filter-element type="OBJECT" id="sequence" selected="true" />
+-            <filter-element type="OBJECT" id="procedure" selected="true" />
+-            <filter-element type="OBJECT" id="function" selected="true" />
+-            <filter-element type="OBJECT" id="package" selected="true" />
+-            <filter-element type="OBJECT" id="type" selected="true" />
+-            <filter-element type="OBJECT" id="dimension" selected="true" />
+-            <filter-element type="OBJECT" id="cluster" selected="true" />
+-            <filter-element type="OBJECT" id="dblink" selected="true" />
+-          </any-schema>
+-        </extended-filter>
+-      </filters>
+-      <sorting enabled="true">
+-        <sorting-element type="RESERVED_WORD" id="keyword" />
+-        <sorting-element type="RESERVED_WORD" id="datatype" />
+-        <sorting-element type="OBJECT" id="column" />
+-        <sorting-element type="OBJECT" id="table" />
+-        <sorting-element type="OBJECT" id="view" />
+-        <sorting-element type="OBJECT" id="materialized view" />
+-        <sorting-element type="OBJECT" id="index" />
+-        <sorting-element type="OBJECT" id="constraint" />
+-        <sorting-element type="OBJECT" id="trigger" />
+-        <sorting-element type="OBJECT" id="synonym" />
+-        <sorting-element type="OBJECT" id="sequence" />
+-        <sorting-element type="OBJECT" id="procedure" />
+-        <sorting-element type="OBJECT" id="function" />
+-        <sorting-element type="OBJECT" id="package" />
+-        <sorting-element type="OBJECT" id="type" />
+-        <sorting-element type="OBJECT" id="dimension" />
+-        <sorting-element type="OBJECT" id="cluster" />
+-        <sorting-element type="OBJECT" id="dblink" />
+-        <sorting-element type="OBJECT" id="schema" />
+-        <sorting-element type="OBJECT" id="role" />
+-        <sorting-element type="OBJECT" id="user" />
+-        <sorting-element type="RESERVED_WORD" id="function" />
+-        <sorting-element type="RESERVED_WORD" id="parameter" />
+-      </sorting>
+-      <format>
+-        <enforce-code-style-case value="true" />
+-      </format>
+-    </code-completion-settings>
+-    <execution-engine-settings>
+-      <statement-execution>
+-        <fetch-block-size value="100" />
+-        <execution-timeout value="20" />
+-        <debug-execution-timeout value="600" />
+-        <focus-result value="false" />
+-        <prompt-execution value="false" />
+-      </statement-execution>
+-      <script-execution>
+-        <command-line-interfaces />
+-        <execution-timeout value="300" />
+-      </script-execution>
+-      <method-execution>
+-        <execution-timeout value="30" />
+-        <debug-execution-timeout value="600" />
+-        <parameter-history-size value="10" />
+-      </method-execution>
+-    </execution-engine-settings>
+-    <operation-settings>
+-      <transactions>
+-        <uncommitted-changes>
+-          <on-project-close value="ASK" />
+-          <on-disconnect value="ASK" />
+-          <on-autocommit-toggle value="ASK" />
+-        </uncommitted-changes>
+-        <multiple-uncommitted-changes>
+-          <on-commit value="ASK" />
+-          <on-rollback value="ASK" />
+-        </multiple-uncommitted-changes>
+-      </transactions>
+-      <session-browser>
+-        <disconnect-session value="ASK" />
+-        <kill-session value="ASK" />
+-        <reload-on-filter-change value="false" />
+-      </session-browser>
+-      <compiler>
+-        <compile-type value="KEEP" />
+-        <compile-dependencies value="ASK" />
+-        <always-show-controls value="false" />
+-      </compiler>
+-      <debugger>
+-        <debugger-type value="ASK" />
+-      </debugger>
+-    </operation-settings>
+-    <ddl-file-settings>
+-      <extensions>
+-        <mapping file-type-id="VIEW" extensions="vw" />
+-        <mapping file-type-id="TRIGGER" extensions="trg" />
+-        <mapping file-type-id="PROCEDURE" extensions="prc" />
+-        <mapping file-type-id="FUNCTION" extensions="fnc" />
+-        <mapping file-type-id="PACKAGE" extensions="pkg" />
+-        <mapping file-type-id="PACKAGE_SPEC" extensions="pks" />
+-        <mapping file-type-id="PACKAGE_BODY" extensions="pkb" />
+-        <mapping file-type-id="TYPE" extensions="tpe" />
+-        <mapping file-type-id="TYPE_SPEC" extensions="tps" />
+-        <mapping file-type-id="TYPE_BODY" extensions="tpb" />
+-      </extensions>
+-      <general>
+-        <lookup-ddl-files value="true" />
+-        <create-ddl-files value="false" />
+-        <synchronize-ddl-files value="true" />
+-        <use-qualified-names value="false" />
+-        <make-scripts-rerunnable value="true" />
+-      </general>
+-    </ddl-file-settings>
+-    <general-settings>
+-      <regional-settings>
+-        <date-format value="MEDIUM" />
+-        <number-format value="UNGROUPED" />
+-        <locale value="SYSTEM_DEFAULT" />
+-        <use-custom-formats value="false" />
+-      </regional-settings>
+-      <environment>
+-        <environment-types>
+-          <environment-type id="development" name="Development" description="Development environment" color="-2430209/-12296320" readonly-code="false" readonly-data="false" />
+-          <environment-type id="integration" name="Integration" description="Integration environment" color="-2621494/-12163514" readonly-code="true" readonly-data="false" />
+-          <environment-type id="production" name="Production" description="Productive environment" color="-11574/-10271420" readonly-code="true" readonly-data="true" />
+-          <environment-type id="other" name="Other" description="" color="-1576/-10724543" readonly-code="false" readonly-data="false" />
+-        </environment-types>
+-        <visibility-settings>
+-          <connection-tabs value="true" />
+-          <dialog-headers value="true" />
+-          <object-editor-tabs value="true" />
+-          <script-editor-tabs value="false" />
+-          <execution-result-tabs value="true" />
+-        </visibility-settings>
+-      </environment>
+-    </general-settings>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ /dev/null	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"19\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/.idea/gradle.xml	(date 1715632241589)
+@@ -7,7 +7,7 @@
+         <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleJvm" value="19" />
++        <option name="gradleJvm" value="jbr-17" />
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel target=\"20\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/.idea/compiler.xml	(date 1715176212275)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="CompilerConfiguration">
+-    <bytecodeTargetLevel target="20" />
++    <bytecodeTargetLevel target="17" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/.idea/vcs.xml	(date 1715176212267)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_19\" project-jdk-name=\"20\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/.idea/misc.xml	(date 1715656445587)
+@@ -1,7 +1,6 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="20" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: app/src/main/res/layout/header.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"200dp\"\r\n    android:orientation=\"vertical\"\r\n    android:background=\"@drawable/gradient_adbook\"\r\n    android:gravity=\"bottom\"\r\n    android:padding=\"20dp\">\r\n    <ImageView\r\n        android:layout_width=\"75dp\"\r\n        android:layout_height=\"75dp\"\r\n        android:src=\"@drawable/logo\"/>\r\n    <TextView\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"PageTrade\"\r\n        android:textSize=\"24sp\"\r\n        android:textColor=\"@color/black\"\r\n        android:textStyle=\"bold\"/>\r\n    <TextView\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Trade stories, share worlds!\"\r\n        android:textColor=\"@color/black\"\r\n        android:textSize=\"14sp\"\r\n        android:textStyle=\"italic\"/>\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/header.xml b/app/src/main/res/layout/header.xml
+--- a/app/src/main/res/layout/header.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/app/src/main/res/layout/header.xml	(date 1715632458806)
+@@ -13,14 +13,14 @@
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:text="PageTrade"
++        android:text="BoiNiketan"
+         android:textSize="24sp"
+         android:textColor="@color/black"
+         android:textStyle="bold"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:text="Trade stories, share worlds!"
++        android:text="Explore,Read,Thrive!"
+         android:textColor="@color/black"
+         android:textSize="14sp"
+         android:textStyle="italic"/>
+Index: app/src/main/res/layout/activity_buyer_profile.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/drawer_layout\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/vie_bg\"\r\n    tools:context=\".BuyerProfileActivity\"\r\n    android:fitsSystemWindows=\"true\"\r\n    tools:layout_editor_absoluteX=\"-314dp\"\r\n    tools:layout_editor_absoluteY=\"-6dp\"\r\n    tools:openDrawer=\"start\">\r\n\r\n    <com.google.android.material.navigation.NavigationView\r\n        android:id=\"@+id/nav_view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\"\r\n        app:headerLayout=\"@layout/header\"\r\n        app:menu=\"@menu/all_menu_buyer\" />\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <androidx.appcompat.widget.Toolbar\r\n            android:id=\"@+id/toolbar\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"56dp\"\r\n            android:background=\"@color/lavender1\"\r\n            app:titleTextColor=\"@color/black\"\r\n            android:elevation=\"4dp\"\r\n            android:theme=\"@style/ThemeOverlay.AppCompat.Dark.ActionBar\"\r\n            app:popupTheme=\"@style/ThemeOverlay.AppCompat.Light\" />\r\n\r\n        <androidx.constraintlayout.widget.ConstraintLayout\r\n            android:id=\"@+id/container\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:paddingLeft=\"@dimen/fragment_horizontal_margin\"\r\n            android:paddingTop=\"@dimen/fragment_vertical_margin\"\r\n            android:paddingRight=\"@dimen/fragment_horizontal_margin\"\r\n            android:paddingBottom=\"@dimen/fragment_vertical_margin\"\r\n            tools:context=\".LoginTabFragment\">\r\n\r\n            <de.hdodenhof.circleimageview.CircleImageView\r\n                android:id=\"@+id/profileIv\"\r\n                android:layout_width=\"150dp\"\r\n                android:layout_height=\"150dp\"\r\n                android:layout_marginTop=\"15dp\"\r\n                android:src=\"@drawable/addphoto\"\r\n                app:layout_constraintHeight=\"120dp\"\r\n                app:layout_constraintBottom_toBottomOf=\"parent\"\r\n                app:layout_constraintEnd_toEndOf=\"parent\"\r\n                app:layout_constraintStart_toStartOf=\"parent\"\r\n                app:layout_constraintTop_toTopOf=\"parent\"\r\n                app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n            <EditText\r\n                android:id=\"@+id/nameEt\"\r\n                android:layout_width=\"0dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:background=\"@drawable/edit_txt_bg\"\r\n                android:hint=\"Username\"\r\n                android:inputType=\"textPersonName\"\r\n                android:paddingLeft=\"20dp\"\r\n                android:paddingTop=\"10dp\"\r\n                android:paddingBottom=\"10dp\"\r\n                android:selectAllOnFocus=\"true\"\r\n                android:textColor=\"@color/black\"\r\n                android:drawableStart=\"@drawable/authorr\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"10dp\"\r\n                android:textColorHint=\"@color/lavender0\"\r\n                app:layout_constraintBottom_toBottomOf=\"parent\"\r\n                app:layout_constraintEnd_toEndOf=\"parent\"\r\n                app:layout_constraintStart_toStartOf=\"parent\"\r\n                app:layout_constraintTop_toTopOf=\"parent\"\r\n                app:layout_constraintVertical_bias=\"0.385\"\r\n                app:layout_constraintWidth_percent=\".8\" />\r\n\r\n            <EditText\r\n                android:id=\"@+id/phoneEt\"\r\n                android:layout_width=\"0dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:background=\"@drawable/edit_txt_bg\"\r\n                android:hint=\"Phone Number\"\r\n                android:inputType=\"numberSigned\"\r\n                android:paddingLeft=\"20dp\"\r\n                android:paddingTop=\"10dp\"\r\n                android:paddingBottom=\"10dp\"\r\n                android:selectAllOnFocus=\"true\"\r\n                android:textColor=\"@color/black\"\r\n                android:drawableStart=\"@drawable/phonee\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"10dp\"\r\n                android:textColorHint=\"@color/lavender0\"\r\n                app:layout_constraintBottom_toBottomOf=\"parent\"\r\n                app:layout_constraintEnd_toEndOf=\"parent\"\r\n                app:layout_constraintStart_toStartOf=\"parent\"\r\n                app:layout_constraintTop_toTopOf=\"parent\"\r\n                app:layout_constraintVertical_bias=\"0.499\"\r\n                app:layout_constraintWidth_percent=\".8\" />\r\n\r\n            <EditText\r\n                android:id=\"@+id/addressEt\"\r\n                android:layout_width=\"0dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:background=\"@drawable/edit_txt_bg\"\r\n                android:hint=\"Address\"\r\n                android:inputType=\"textPostalAddress|textMultiLine\"\r\n                android:paddingLeft=\"20dp\"\r\n                android:paddingTop=\"10dp\"\r\n                android:paddingBottom=\"10dp\"\r\n                android:selectAllOnFocus=\"true\"\r\n                android:textColor=\"@color/black\"\r\n                android:drawableStart=\"@drawable/address\"\r\n                android:drawablePadding=\"10dp\"\r\n                android:padding=\"10dp\"\r\n                android:textColorHint=\"@color/lavender0\"\r\n                app:layout_constraintBottom_toBottomOf=\"parent\"\r\n                app:layout_constraintEnd_toEndOf=\"parent\"\r\n                app:layout_constraintStart_toStartOf=\"parent\"\r\n                app:layout_constraintTop_toTopOf=\"parent\"\r\n                app:layout_constraintVertical_bias=\"0.624\"\r\n                app:layout_constraintWidth_percent=\".8\" />\r\n\r\n            <com.google.android.material.floatingactionbutton.FloatingActionButton\r\n                android:id=\"@+id/saveBtn\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_weight=\"1\"\r\n                android:layout_margin=\"20dp\"\r\n                android:layout_gravity=\"end|bottom\"\r\n                app:fabSize=\"normal\"\r\n                app:backgroundTint=\"@color/lavender0\"\r\n                android:elevation=\"6dp\"\r\n                android:src=\"@drawable/done\"\r\n                app:layout_constraintEnd_toEndOf=\"parent\"\r\n                app:layout_constraintBottom_toBottomOf=\"parent\"/>\r\n\r\n        </androidx.constraintlayout.widget.ConstraintLayout>\r\n\r\n    </LinearLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_buyer_profile.xml b/app/src/main/res/layout/activity_buyer_profile.xml
+--- a/app/src/main/res/layout/activity_buyer_profile.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/app/src/main/res/layout/activity_buyer_profile.xml	(date 1715179350141)
+@@ -18,22 +18,7 @@
+         android:layout_height="match_parent"
+         android:layout_gravity="start"
+         app:headerLayout="@layout/header"
+-        app:menu="@menu/all_menu_buyer" />
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:orientation="vertical">
+-
+-        <androidx.appcompat.widget.Toolbar
+-            android:id="@+id/toolbar"
+-            android:layout_width="match_parent"
+-            android:layout_height="56dp"
+-            android:background="@color/lavender1"
+-            app:titleTextColor="@color/black"
+-            android:elevation="4dp"
+-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
++        app:menu="@menu/all_menu_buyer" >
+ 
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/container"
+@@ -51,9 +36,9 @@
+                 android:layout_height="150dp"
+                 android:layout_marginTop="15dp"
+                 android:src="@drawable/addphoto"
+-                app:layout_constraintHeight="120dp"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintHeight="120dp"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintVertical_bias="0.0" />
+@@ -63,16 +48,16 @@
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/edit_txt_bg"
++                android:drawableStart="@drawable/authorr"
++                android:drawablePadding="10dp"
+                 android:hint="Username"
+                 android:inputType="textPersonName"
++                android:padding="10dp"
+                 android:paddingLeft="20dp"
+                 android:paddingTop="10dp"
+                 android:paddingBottom="10dp"
+                 android:selectAllOnFocus="true"
+                 android:textColor="@color/black"
+-                android:drawableStart="@drawable/authorr"
+-                android:drawablePadding="10dp"
+-                android:padding="10dp"
+                 android:textColorHint="@color/lavender0"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+@@ -86,16 +71,16 @@
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/edit_txt_bg"
++                android:drawableStart="@drawable/phonee"
++                android:drawablePadding="10dp"
+                 android:hint="Phone Number"
+                 android:inputType="numberSigned"
++                android:padding="10dp"
+                 android:paddingLeft="20dp"
+                 android:paddingTop="10dp"
+                 android:paddingBottom="10dp"
+                 android:selectAllOnFocus="true"
+                 android:textColor="@color/black"
+-                android:drawableStart="@drawable/phonee"
+-                android:drawablePadding="10dp"
+-                android:padding="10dp"
+                 android:textColorHint="@color/lavender0"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+@@ -109,16 +94,16 @@
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/edit_txt_bg"
++                android:drawableStart="@drawable/address"
++                android:drawablePadding="10dp"
+                 android:hint="Address"
+                 android:inputType="textPostalAddress|textMultiLine"
++                android:padding="10dp"
+                 android:paddingLeft="20dp"
+                 android:paddingTop="10dp"
+                 android:paddingBottom="10dp"
+                 android:selectAllOnFocus="true"
+                 android:textColor="@color/black"
+-                android:drawableStart="@drawable/address"
+-                android:drawablePadding="10dp"
+-                android:padding="10dp"
+                 android:textColorHint="@color/lavender0"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+@@ -131,17 +116,33 @@
+                 android:id="@+id/saveBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+-                android:layout_weight="1"
+-                android:layout_margin="20dp"
+                 android:layout_gravity="end|bottom"
+-                app:fabSize="normal"
+-                app:backgroundTint="@color/lavender0"
++                android:layout_margin="20dp"
++                android:layout_weight="1"
+                 android:elevation="6dp"
+                 android:src="@drawable/done"
+-                app:layout_constraintEnd_toEndOf="parent"
+-                app:layout_constraintBottom_toBottomOf="parent"/>
++                app:backgroundTint="@color/lavender0"
++                app:fabSize="normal"
++                app:layout_constraintBottom_toBottomOf="parent"
++                app:layout_constraintEnd_toEndOf="parent" />
+ 
+         </androidx.constraintlayout.widget.ConstraintLayout>
++    </com.google.android.material.navigation.NavigationView>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="vertical">
++
++        <androidx.appcompat.widget.Toolbar
++            android:id="@+id/toolbar"
++            android:layout_width="match_parent"
++            android:layout_height="56dp"
++            android:background="@color/lavender1"
++            app:titleTextColor="@color/black"
++            android:elevation="4dp"
++            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
++            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+ 
+     </LinearLayout>
+ 
+Index: app/src/main/res/layout/activity_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".LoginActivity\"\r\n    android:background=\"@color/offWhite\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView2\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"0dp\"\r\n        android:src=\"@drawable/up\"\r\n        app:layout_constraintHeight_percent=\".27\"\r\n        android:scaleType=\"centerCrop\"\r\n        app:layout_constraintVertical_bias=\"0\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"/>\r\n\r\n    <androidx.constraintlayout.widget.ConstraintLayout\r\n        android:id=\"@+id/constraintLayout\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"0dp\"\r\n        android:background=\"@drawable/vie_bg\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHeight_percent=\".78\"\r\n        app:layout_constraintHorizontal_bias=\"1.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"1.0\">\r\n\r\n        <androidx.viewpager.widget.ViewPager\r\n            android:id=\"@+id/view_pager\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"0dp\"\r\n            app:layout_constraintBottom_toBottomOf=\"parent\"\r\n            app:layout_constraintEnd_toEndOf=\"parent\"\r\n            app:layout_constraintHeight_percent=\".7\"\r\n            app:layout_constraintHorizontal_bias=\"0.0\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toBottomOf=\"@+id/tab_layout\"\r\n            app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n        <com.google.android.material.tabs.TabLayout\r\n            android:id=\"@+id/tab_layout\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:background=\"@color/offWhite\"\r\n            app:layout_constraintBottom_toBottomOf=\"parent\"\r\n            app:layout_constraintEnd_toEndOf=\"parent\"\r\n            app:layout_constraintHorizontal_bias=\"0.0\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toTopOf=\"parent\"\r\n            app:layout_constraintVertical_bias=\"0.097\" />\r\n\r\n\r\n        <!--com.google.android.material.floatingactionbutton.FloatingActionButton\r\n            android:id=\"@+id/fab_google\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:elevation=\"35dp\"\r\n            android:src=\"@drawable/google\"\r\n            app:backgroundTint=\"@color/white\"\r\n            app:layout_constraintBottom_toBottomOf=\"parent\"\r\n            app:layout_constraintEnd_toEndOf=\"parent\"\r\n            app:layout_constraintHorizontal_bias=\"0.498\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toBottomOf=\"@id/view_pager\"\r\n            app:layout_constraintVertical_bias=\"0.058\" /-->\r\n\r\n    </androidx.constraintlayout.widget.ConstraintLayout>\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView3\"\r\n        android:layout_width=\"94dp\"\r\n        android:layout_height=\"90dp\"\r\n        android:src=\"@drawable/logo\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/constraintLayout\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.498\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"@id/imageView2\"\r\n        app:layout_constraintVertical_bias=\"0.197\" />\r\n\r\n    <TextView\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:fontFamily=\"@font/acme\"\r\n        android:text=\"Welcome to PageTrade...\"\r\n        android:textColor=\"@color/black\"\r\n        android:textSize=\"18sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/constraintLayout\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.559\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"@id/imageView3\"\r\n        app:layout_constraintVertical_bias=\"0.81\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_login.xml b/app/src/main/res/layout/activity_login.xml
+--- a/app/src/main/res/layout/activity_login.xml	(revision 15f0f534f4f2e2dcd23d3f59722032b41d861e92)
++++ b/app/src/main/res/layout/activity_login.xml	(date 1715177041899)
+@@ -90,7 +90,7 @@
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:fontFamily="@font/acme"
+-        android:text="Welcome to PageTrade..."
++        android:text="Welcome to BoiNiketan..."
+         android:textColor="@color/black"
+         android:textSize="18sp"
+         android:textStyle="bold"

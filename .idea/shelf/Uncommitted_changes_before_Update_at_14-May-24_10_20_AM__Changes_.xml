@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_14-May-24_10_20_AM_[Changes]" date="1715660443115" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-May-24_10_20_AM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 14-May-24 10:20 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="app/src/main/res/drawable/logo.png" />
+    <option name="AFTER_PATH" value="app/src/main/res/drawable/logo.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-May-24_10_20_AM_[Changes]/logo.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/src/main/res/drawable/slogo.png" />
+    <option name="AFTER_PATH" value="app/src/main/res/drawable/slogo.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-May-24_10_20_AM_[Changes]/slogo.png" />
+  </binary>
+</changelist>
